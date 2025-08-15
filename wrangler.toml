@@ -1,0 +1,5 @@
+name = "codyconfer"
+compatibility_date = "2022-07-12"
+
+[site]
+include = ["_site"]
