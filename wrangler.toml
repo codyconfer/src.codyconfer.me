@@ -1,5 +1,4 @@
 name = "codyconfer"
-main = "index.html"
 compatibility_date = "2022-07-12"
 
 [site]
