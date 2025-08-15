@@ -40,7 +40,6 @@ body {
 }
 
 prf-content {
-  display: flex;
   flex: fit-content;
 }
 
