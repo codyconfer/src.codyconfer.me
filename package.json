@@ -1,0 +1,26 @@
+{
+  "name": "src.codyconfer.me",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "bunx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@types/bun": "latest",
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "lit": "^3.3.1",
+    "lit-html": "^3.3.1",
+    "terser": "^5.43.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/codyconfer/src.codyconfer.me.git",
+  "include": [
+    "src/**/*"
+  ]
+}
