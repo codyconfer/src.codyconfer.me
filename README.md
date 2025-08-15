@@ -1,15 +1,21 @@
 # src.codyconfer.me
 
-To install dependencies:
+> source for codyconfer.me.
+
+## Getting Started
+
+### Build Tools
+
+[Install Bun](https://github.com/oven-sh/bun)
+
+#### Install Dependencies
 
 ```bash
 bun install
 ```
 
-To run:
+### Dev
 
 ```bash
 bun serve
 ```
-
-This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
