@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "serve": "bunx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
