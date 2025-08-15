@@ -1,6 +1,5 @@
 name = "codyconfer"
-main = "_site/index.html"
 compatibility_date = "2022-07-12"
 
-[site]
-bucket = "_site"
+[assets]
+directory = "./_site"
