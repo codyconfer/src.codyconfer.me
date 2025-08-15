@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "bunx @11ty/eleventy --serve",
     "build": "bunx @11ty/eleventy",
-    "ci-pkg": "npm i --prefix prf.elements/ && npm run build --prefix prf.elements/ && npx @11ty/eleventy"
+    "pkg": "bun i --prefix prf.elements/ && bun run build --prefix prf.elements/ && bunx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
