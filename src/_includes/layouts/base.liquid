@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link rel="icon" type="image/jpg" href="/assets/icon.jpg"/>
+<link rel="icon" type="image/jpg" href="/assets/{{ icon | default: 'icon.jpg' }}"/>
 <meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
-<title>codyconfer.me</title>
-<meta name="theme-color" content="#002b36">
-<meta name="rating" content="General">
-<meta name="geo.region" content="US-CO">
-<meta name="geo.placename" content="Fort Collins">
-<meta name="geo.position" content="40.5853,-105.0844" />
+<title>{{ title | default: 'codyconfer.me' }}</title>
+<meta name="theme-color" content="{{ theme-color | default: '#002b36' }}">
+<meta name="rating" content="{{ rating | default: 'General' }}">
+<meta name="geo.region" content="{{ region | default: 'US-CO' }}">
+<meta name="geo.placename" content="{{ place | default: 'Fort Collins' }}">
+<meta name="geo.position" content="{{ position | default: '40.5853,-105.0844' }}" />
 <script type="module" src="/prf.elements.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

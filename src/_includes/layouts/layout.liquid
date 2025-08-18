@@ -1,9 +1,16 @@
 ---
 layout: "layouts/base.liquid"
+icon: "icon.jpg"
+title: "codyconfer.me"
+theme-color: "#002b36"
+rating: "General"
+region: "US-CO"
+place: "Fort Collins"
+position: "40.5853,-105.0844"
 ---
 <prf-header>
-    <img src="/assets/icon.jpg" alt="sauce" class="icon">
-    <h1><cursor-animation>codyconfer.me</cursor-animation></h1>
+    <img src="/assets/{{ icon | default: 'icon.jpg' }}" alt="sauce" class="icon">
+    <h1><cursor-animation>{{ title | default: 'codyconfer.me' }}</cursor-animation></h1>
 </prf-header>
 <prf-content>
     {{ content }}
