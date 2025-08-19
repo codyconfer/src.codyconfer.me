@@ -59,6 +59,14 @@ h3[class*="location"] {
     justify-content: center;
     gap: 1rem;
   }
+
+  .resume-header > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
