@@ -14,7 +14,10 @@
   font-display: swap;
 }
 :root {
-  font-family: Cabin, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
+  --sans-font: Cabin, system-ui, Roboto, Verdana, Helvectica, Arial;
+  --mono-font: Terminess, Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+  --dyslexic-font: Dyslexic, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
+  font-family: var(--sans-font), sans-serif;
   line-height: 1.5;
   font-weight: 400;
   text-rendering: optimizeLegibility;
