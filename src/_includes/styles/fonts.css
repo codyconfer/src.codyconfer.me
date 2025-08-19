@@ -3,16 +3,19 @@
   src: url('/assets/Cabin.woff2') format('woff2');
   font-display: swap;
 }
+
 @font-face {
   font-family: Terminess;
   src: url('/assets/Terminess.woff2') format('woff2');
   font-display: swap;
 }
+
 @font-face {
   font-family: Dyslexic;
   src: url('/assets/OpenDyslexic.woff2') format('woff2');
   font-display: swap;
 }
+
 :root {
   --sans-font: Cabin, system-ui, Roboto, Verdana, Helvectica, Arial;
   --mono-font: Terminess, Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;

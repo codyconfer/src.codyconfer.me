@@ -37,6 +37,7 @@
   color: var(--foreground-0);
   background-color: var(--background-0);
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     /*light scheme overrides*/

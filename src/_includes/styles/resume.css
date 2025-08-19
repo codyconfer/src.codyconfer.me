@@ -1,23 +1,29 @@
 hr {
   margin: 2.5rem 0;
 }
+
 h3[class*="job"],
 h3[class*="school"] {
   margin: 2.5rem 0 0.5rem;
 }
+
 h4[class*="job"],
-h4[class*="school"]{
+h4[class*="school"] {
   margin: 0.3rem 0;
 }
-h5[class*="job"]{
+
+h5[class*="job"] {
   margin: 0.2rem 0;
 }
+
 h1[class*="name"] {
   margin: 0 0 0.5rem;
 }
+
 h2[class*="jobTitle"] {
   margin: 0 0 0.3rem;
 }
+
 h3[class*="location"] {
   margin: 0 0 0.2rem;
 }

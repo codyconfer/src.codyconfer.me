@@ -3,7 +3,7 @@ import htmlmin from "html-minifier-terser"
 import markdownIt from "markdown-it"
 import markdownItAttrs from 'markdown-it-attrs'
 import {minify} from "terser"
-import { RenderPlugin } from "@11ty/eleventy"
+import {RenderPlugin} from "@11ty/eleventy"
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 
 
@@ -31,7 +31,7 @@ export default async function (eleventyConfig) {
   })
   eleventyConfig.addFilter("jsmin", async function (code) {
     try {
-      const minified = await minify(code, { format: { comments: false }});
+      const minified = await minify(code, {format: {comments: false}});
       return minified.code
     } catch (err) {
       console.error("Terser error: ", err);
