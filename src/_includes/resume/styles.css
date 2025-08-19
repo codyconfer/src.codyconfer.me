@@ -49,7 +49,7 @@ h3[class*="location"] {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -62,11 +62,21 @@ h3[class*="location"] {
 }
 
 @media only screen and (max-width: 480px) {
+  .profile,
   .resume-header,
-  .profile-container {
+  .profile-container,
+  .resume-header > p {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+  }
+
+  .resume-header > p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 }
