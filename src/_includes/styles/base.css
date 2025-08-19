@@ -42,6 +42,16 @@ pre {
   height: 48px;
   border-radius: 50%;
 }
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 1rem;
+  color: var(--foreground-0);
+}
+.hidden {
+  display: none;
+}
 .sans {
   font-family: Outfit, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
 }

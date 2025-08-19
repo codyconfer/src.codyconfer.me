@@ -1,8 +1,13 @@
+:not(pre) > code[class*="language-"],
+pre[class*="language-"],
+code {
+  background: var(--background-1);
+  color: var(--foreground-1);
+}
 code[class*="language-"],
 pre[class*="language-"] {
-  color: var(--foreground-1);
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  font-family: Terminess, Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
+  font-family: var(--mono-font), monospace;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -16,18 +21,13 @@ pre[class*="language-"] {
   hyphens: none;
 }
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
+  padding: 1rem;
   overflow: auto;
-  border-radius: 0.3em;
+  border-radius: 1rem;
 }
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: var(--background-1);
-}
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+:not(pre) > code {
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.3rem;
 }
 .token.important,
 .token.bold {

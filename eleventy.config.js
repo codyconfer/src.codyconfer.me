@@ -22,8 +22,7 @@ export default async function (eleventyConfig) {
   })
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
-  });
-
+  })
   eleventyConfig.addTransform("htmlmin", function (content) {
     if ((this.page.outputPath || "").endsWith(".html"))
       return htmlmin.minify(content, {
@@ -32,7 +31,7 @@ export default async function (eleventyConfig) {
         collapseWhitespace: true,
       })
     return content;
-  });
+  })
 
   eleventyConfig.addPlugin(syntaxHighlight)
 }
