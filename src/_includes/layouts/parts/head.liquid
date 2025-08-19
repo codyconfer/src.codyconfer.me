@@ -6,7 +6,7 @@
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <title>{{ title | default: 'codyconfer.me' }}</title>
-    <link rel="icon" type="image/jpg" href="/assets/{{ icon | default: 'icon.jpg' }}"/>
+    <link rel="icon" type="image/jpg" href="/assets/images/{{ icon | default: 'avatar.webp' }}"/>
     <meta name="theme-color" content="{{ theme-color | default: '#002b36' }}">
     <meta name="rating" content="{{ rating | default: 'General' }}">
     <meta name="geo.region" content="{{ region | default: 'US-CO' }}">
@@ -15,7 +15,7 @@
     <script>
         {% include "js/headerScripts.liquid" %}
     </script>
-    <style>{% include "styles/styles.liquid" %}</style>
+    <style>{% include "layouts/parts/styles.liquid" %}</style>
 </head>
 <body id="prf" class="veil hidden">
 {{ content }}

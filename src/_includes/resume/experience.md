@@ -1,16 +1,9 @@
 
-# Cody Confer {.name}
-## Software Engineer {.jobTitle}
-### Fort Collins, Colorado {.location}
-
-- [mail@codyconfer.me](mailto:mail@codyconfer.me)<br>
-- [https://github.codyconfer.me](https://github.codyconfer.me)
-
----
+-----
 
 ## Professional Experience
 
-### AgentSync {.current}
+### AgentSync {.first-entry}
 #### Staff Software Engineer {.job}
 ##### Denver, Colorado | September 2022 – Present {.job}
 - Developed and maintained distributed, cloud-native applications using Go, Python, Java/Spring.
@@ -80,7 +73,7 @@
 
 ## Education
 
-### Florida State University
+### Florida State University {.first-entry}
 #### Tallahassee, Florida {.school}
 - Bachelor of Science (BS), Information Technology
 - Network Architecture/Information Security

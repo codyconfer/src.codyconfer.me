@@ -1,0 +1,22 @@
+{% capture css %}
+    {% include 'resume/styles.css' %}
+{% endcapture %}
+{% capture profile %}
+    {% include 'resume/profile.md' %}
+{% endcapture %}
+{% capture contact %}
+    {% include 'resume/contact.md' %}
+{% endcapture %}
+<style>
+    {{ css | cssmin }}
+</style>
+<section class="resume resume-header">
+    <div class="profile-container">
+        <img src="/assets/images/codyconfer.webp"
+             eleventy:widths="512" eleventy:formats="webp" alt="cody" class="profile profile-image" />
+        <div class="profile">
+            {{ profile |  md }}
+        </div>
+    </div>
+    {{ contact |  md }}
+</section>
