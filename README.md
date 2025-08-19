@@ -11,11 +11,11 @@
 #### Install Dependencies
 
 ```bash
-bun install
+bun install && bun --cwd=prf.elements/ install
 ```
 
 ### Dev
 
 ```bash
-bun serve
+bun dev
 ```
