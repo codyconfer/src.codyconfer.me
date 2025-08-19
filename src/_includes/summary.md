@@ -3,8 +3,6 @@
 ## Software Engineer {.jobTitle}
 ### | Fort Collins, Colorado {.location}
 
----
-
 > Experienced Software Engineer with a strong focus on full-stack development, cloud-native solutions, event-driven architectures, and cross-platform application development. Proven track record of delivering scalable, efficient, and maintainable software solutions in high-impact environments.
 
 ---
