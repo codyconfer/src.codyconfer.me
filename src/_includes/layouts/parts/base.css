@@ -93,6 +93,10 @@ blockquote p {
   display: none;
 }
 
+.small-text {
+  font-size: 0.7rem;
+}
+
 .sans {
   font-family: var(--sans-font), sans-serif;
 }
