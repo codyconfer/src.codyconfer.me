@@ -27,3 +27,27 @@ h2[class*="jobTitle"] {
 h3[class*="location"] {
   margin: 0 0 0.2rem;
 }
+
+.first-entry {
+  margin-bottom: 0.5rem;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-image {
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}

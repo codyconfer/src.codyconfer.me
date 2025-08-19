@@ -5,14 +5,17 @@ import markdownItAttrs from 'markdown-it-attrs'
 import {minify} from "terser"
 import {RenderPlugin} from "@11ty/eleventy"
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
+import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
 
 
 const _path = 'src'
+const _includes =`${_path}/_includes`
+const _assets = `${_path}/assets`
 
 export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory(_path)
 
-  eleventyConfig.addPassthroughCopy('src/assets/*')
+  eleventyConfig.addPassthroughCopy(`${_assets}/*`)
 
   let options = {
     html: true,
@@ -52,4 +55,14 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(RenderPlugin)
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp", "jpeg"],
+    htmlOptions: {
+      imgAttributes: {
+        loading: "lazy",
+        decoding: "async",
+      },
+      pictureAttributes: {}
+    },
+  });
 }

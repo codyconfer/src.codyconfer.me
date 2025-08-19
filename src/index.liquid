@@ -1,13 +1,8 @@
 ---
-layout: "layouts/layout.liquid"
+layout: "layouts/default.liquid"
 ---
-{% capture css %}
-    {% include 'styles/resume.css' %}
-{% endcapture %}
 {% capture copy %}
-    {% include 'summary.md' %}
+    {% include 'resume/summary.md' %}
 {% endcapture %}
-<style>
-    {{ css | cssmin }}
-</style>
+{% include 'resume/header.liquid' %}
 {{ copy | md }}
