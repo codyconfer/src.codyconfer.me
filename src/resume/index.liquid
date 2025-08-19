@@ -1,0 +1,14 @@
+---
+layout: "layouts/layout.liquid"
+title: Cody's Resume
+---
+{% capture css %}
+    {% include 'styles/resume.css' %}
+{% endcapture %}
+{% capture copy %}
+    {% include 'experience.md' %}
+{% endcapture %}
+<style>
+    {{ css | cssmin }}
+</style>
+{{ copy | md }}

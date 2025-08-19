@@ -3,4 +3,4 @@
 node_modules
 !_site
 _site
-/src/_includes/js/prf.elements.js
+src/_includes/js/prf.elements.js
