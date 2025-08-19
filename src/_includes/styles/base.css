@@ -37,10 +37,19 @@ pre {
   background-color: var(--background-1);
   padding: 1rem;
 }
+.horizontal-center {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+.logo {
+  height: 32px;
+  width: 32px;
 }
 .logo-link {
   display: flex;
