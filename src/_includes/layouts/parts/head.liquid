@@ -12,6 +12,7 @@
     <meta name="geo.region" content="{{ region | default: 'US-CO' }}">
     <meta name="geo.placename" content="{{ place | default: 'Fort Collins' }}">
     <meta name="geo.position" content="{{ position | default: '40.5853,-105.0844' }}"/>
+    {% getBundle "fontawesome" %}
     <script>
         {% include "js/headerScripts.liquid" %}
     </script>

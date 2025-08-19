@@ -53,6 +53,18 @@ h3[class*="location"] {
   gap: 2rem;
 }
 
+.contact {
+  margin: 0 1rem;
+}
+
+.contact > p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   .resume-header {
     flex-direction: column;
@@ -61,31 +73,29 @@ h3[class*="location"] {
     gap: 1rem;
   }
 
-  .resume-header > p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  .contact {
+    margin-top: 2rem;
+  }
+
+  .contact > p {
+    gap: 3rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .profile,
-  .resume-header,
-  .profile-container,
-  .resume-header > p {
+  .profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .resume-header > p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+  .contact {
+    margin-top: 1.5rem;
+  }
+
+  .contact > p {
+    gap: 2rem;
   }
 }
