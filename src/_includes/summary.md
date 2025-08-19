@@ -1,10 +1,7 @@
----
-layout: "layouts/layout.liquid"
----
 
-# Cody Confer
-## **Software Engineer**
-### | Fort Collins, Colorado
+# Cody Confer {.name}
+## Software Engineer {.jobTitle}
+### | Fort Collins, Colorado {.location}
 
 ---
 

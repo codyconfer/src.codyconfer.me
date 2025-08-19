@@ -1,0 +1,13 @@
+---
+layout: "layouts/interactive.liquid"
+---
+{% capture css %}
+    {% include 'styles/resume.css' %}
+{% endcapture %}
+{%  capture copy %}
+    {% include 'summary.md' %}
+{% endcapture %}
+<style>
+    {{ css | cssmin }}
+</style>
+{{ copy | md }}
