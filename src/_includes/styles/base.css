@@ -2,35 +2,27 @@
   color: var(--foreground-0);
   background-color: var(--background-0);
 }
-
 h2 {
   color: var(--accent-0);
 }
-
 h3 {
   color: var(--accent-1);
 }
-
 h4 {
   color: var(--accent-2);
 }
-
 h5, li>strong {
   color: var(--accent-3);
 }
-
 hr {
   color: var(--muted-0);
 }
-
 a {
   color: var(--highlight-0)
 }
-
 a:hover {
   color: var(--highlight-1)
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -38,13 +30,20 @@ body {
   min-height: 100vh;
   margin: 0;
 }
-
 prf-content {
   flex: fit-content;
 }
-
 .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+.sans {
+  font-family: Outfit, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
+}
+.mono {
+  font-family: Terminess, Consolas, monospace;
+}
+.dyslexic {
+  font-family: Dyslexic, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
 }
