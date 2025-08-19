@@ -2,6 +2,7 @@
   color: var(--foreground-0);
   background-color: var(--background-0);
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -9,48 +10,61 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
 prf-content {
   flex: fit-content;
 }
+
 h2 {
   color: var(--accent-0);
 }
+
 h3 {
   color: var(--accent-1);
 }
+
 h4 {
   color: var(--accent-2);
 }
-h5, li>strong {
+
+h5, li > strong {
   color: var(--accent-3);
 }
+
 hr {
   color: var(--muted-0);
 }
+
 a {
   color: var(--highlight-0)
 }
+
 a:hover {
   color: var(--highlight-1)
 }
+
 pre {
   background-color: var(--background-1);
   padding: 1rem;
 }
+
 .horizontal-center {
   display: flex;
   align-items: center;
   gap: 0.3rem;
 }
+
 .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
+
 .logo {
   height: 32px;
   width: 32px;
 }
+
 .logo-link {
   display: flex;
   align-items: center;
@@ -58,15 +72,19 @@ pre {
   gap: 1rem;
   color: var(--foreground-0);
 }
+
 .hidden {
   display: none;
 }
+
 .sans {
   font-family: Outfit, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
 }
+
 .mono {
   font-family: Terminess, Consolas, monospace;
 }
+
 .dyslexic {
   font-family: Dyslexic, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
 }

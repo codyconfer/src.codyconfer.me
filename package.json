@@ -3,22 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --cwd=prf.elements/ run build && bunx @11ty/eleventy --serve",
+    "dev": "bun --cwd=prf.elements/ run build && bun run submodules.js && bunx @11ty/eleventy --serve",
     "serve": "bunx @11ty/eleventy --serve",
     "build": "bunx @11ty/eleventy",
-    "pkg": "bun --cwd=prf.elements/ i && bun --cwd=prf.elements/ run build && bunx @11ty/eleventy"
+    "pkg": "bun --cwd=prf.elements/ i && bun --cwd=prf.elements/ run build && bun run submodules.js && bunx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@types/bun": "latest",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "lit": "^3.3.1",
     "lit-html": "^3.3.1",
-    "terser": "^5.43.1",
     "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.3.1"
+    "markdown-it-attrs": "^4.3.1",
+    "terser": "^5.43.1"
   },
   "peerDependencies": {
     "typescript": "^5"
