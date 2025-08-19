@@ -1,5 +1,6 @@
 {% capture css %}
-{% include "styles/theme.css" %}
-{% include "styles/base.css" %}
+    {% include "styles/fonts.css" %}
+    {% include "styles/theme.css" %}
+    {% include "styles/base.css" %}
 {% endcapture %}
 {{ css | cssmin }}
