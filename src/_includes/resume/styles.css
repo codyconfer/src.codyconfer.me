@@ -51,3 +51,11 @@ h3[class*="location"] {
   align-items: center;
   gap: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .resume-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
