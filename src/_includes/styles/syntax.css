@@ -36,9 +36,6 @@ pre[class*="language-"] {
 .token.italic {
   font-style: italic;
 }
-.token.class-name {
-  color: var(--foreground-0);
-}
 .token.punctuation {
   color: var(--muted-0);
 }
