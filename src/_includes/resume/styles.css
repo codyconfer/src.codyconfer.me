@@ -55,7 +55,18 @@ h3[class*="location"] {
 @media only screen and (max-width: 768px) {
   .resume-header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .resume-header,
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
   }
 }
