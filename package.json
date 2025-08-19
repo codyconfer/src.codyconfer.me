@@ -6,7 +6,7 @@
     "dev": "bun --cwd=prf.elements/ run build && bun run submodules.js && bunx @11ty/eleventy --serve",
     "serve": "bunx @11ty/eleventy --serve",
     "build": "bunx @11ty/eleventy",
-    "pkg": "bun --cwd=prf.elements/ i && bun --cwd=prf.elements/ run build && bunx @11ty/eleventy"
+    "pkg": "bun --cwd=prf.elements/ i && bun --cwd=prf.elements/ run build && bun run submodules.js && bunx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
