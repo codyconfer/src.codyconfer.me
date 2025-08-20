@@ -12,13 +12,13 @@
     <meta name="geo.region" content="{{ region | default: 'US-CO' }}">
     <meta name="geo.placename" content="{{ place | default: 'Fort Collins' }}">
     <meta name="geo.position" content="{{ position | default: '40.5853,-105.0844' }}"/>
-    {% getBundle "fontawesome" %}
+    <style>{% include "layouts/parts/styles.liquid" %}</style>
     <script>
         {% include "js/headerScripts.liquid" %}
     </script>
-    <style>{% include "layouts/parts/styles.liquid" %}</style>
 </head>
-<body id="prf" class="veil hidden">
-{{ content }}
+<body id="lmnt" class="veil hidden">
+    {{ content }}
+    <span>{% getBundle "fontawesome" %}</span>
 </body>
 </html>

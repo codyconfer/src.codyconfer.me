@@ -9,14 +9,15 @@ import {RenderPlugin} from "@11ty/eleventy"
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 
 
-const _path = 'src'
-const _includes =`${_path}/_includes`
-const _assets = `${_path}/assets`
+const _input = 'src'
+const _assets = `${_input}/assets`
+const _includes =`${_input}/_includes`
+const _layouts = `${_includes}/layouts`
+
 
 export default async function (eleventyConfig) {
-  eleventyConfig.setInputDirectory(_path)
-
-  eleventyConfig.addPassthroughCopy(`${_assets}/*`)
+  eleventyConfig.setInputDirectory(_input)
+  eleventyConfig.addPassthroughCopy(`${_assets}/`)
 
   let options = {
     html: true,
