@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-prf-content {
+lmnt-content {
   flex: fit-content;
   margin: 0 3rem;
 }
@@ -113,13 +113,13 @@ blockquote p {
 }
 
 @media only screen and (max-width: 768px) {
-  prf-content {
+  lmnt-content {
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  prf-header {
+  lmnt-header {
     display: flex;
     flex-direction: row;
     align-items: center;

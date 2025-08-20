@@ -11,7 +11,7 @@
 #### Install Dependencies
 
 ```bash
-bun install && bun --cwd=prf.elements/ install
+bun install && bun --cwd=lmnt/ install
 ```
 
 ### Dev
