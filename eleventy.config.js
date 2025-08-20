@@ -1,11 +1,12 @@
 import CleanCSS from "clean-css"
+import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
+import fontAwesomePlugin from "@11ty/font-awesome";
 import htmlmin from "html-minifier-terser"
 import markdownIt from "markdown-it"
 import markdownItAttrs from 'markdown-it-attrs'
 import {minify} from "terser"
 import {RenderPlugin} from "@11ty/eleventy"
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
-import {eleventyImageTransformPlugin} from "@11ty/eleventy-img";
 
 
 const _path = 'src'
@@ -53,6 +54,7 @@ export default async function (eleventyConfig) {
     return content;
   })
 
+  eleventyConfig.addPlugin(fontAwesomePlugin)
   eleventyConfig.addPlugin(syntaxHighlight)
   eleventyConfig.addPlugin(RenderPlugin)
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

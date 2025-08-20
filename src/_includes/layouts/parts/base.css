@@ -13,6 +13,7 @@ body {
 
 prf-content {
   flex: fit-content;
+  margin: 0 3rem;
 }
 
 h2 {
@@ -38,11 +39,11 @@ hr {
 }
 
 a {
-  color: var(--highlight-0)
+  color: var(--highlight-1);
 }
 
 a:hover {
-  color: var(--highlight-1)
+  color: var(--highlight-0);
 }
 
 pre {
@@ -67,15 +68,17 @@ blockquote p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
 .avatar {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+  border: 2px solid var(--accent-0);
 }
 
+.icon,
 .logo {
   height: 24px;
   width: 24px;
