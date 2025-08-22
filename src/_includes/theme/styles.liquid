@@ -1,0 +1,8 @@
+{% capture css %}
+    {% include "lmnt/theme/reset.css" %}
+    {% include "theme/fonts.css" %}
+    {% include "lmnt/theme/solarized.css" %}
+    {% include "theme/base.css" %}
+    {% include "lmnt/theme/syntax.css" %}
+{% endcapture %}
+{{ css | cssmin }}
