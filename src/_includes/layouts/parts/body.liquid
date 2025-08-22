@@ -1,27 +1,18 @@
 ---
 layout: "layouts/parts/head.liquid"
 ---
-<lmnt-header>
-    <a class="avatar-link" href="/">
-        <img src="/assets/images/{{ icon | default: 'avatar.webp' }}"
-             eleventy:widths="96" eleventy:formats="webp" alt="sauce" class="avatar"/>
-        <h1 class="mono">
-            codyconfer
-            <blink-animation>.</blink-animation>
-            me
-        </h1>
-    </a>
-</lmnt-header>
-{{ content }}
-<lmnt-footer>
-    <lmnt-nav></lmnt-nav>
-    <div class="horizontal-center">
-        <span class="small-text">built with</span>
-        <a href="https://11ty.dev/" target="_blank">
-            <img src="/assets/images/11ty.webp" eleventy:widths="48" eleventy:formats="webp" alt="11ty" class="logo"/>
-        </a>
-        <a href="https://lit.dev/" target="_blank">
-            <img src="/assets/svg/lit.svg" eleventy:widths="48" eleventy:formats="webp" alt="lit" class="logo"/>
-        </a>
-    </div>
-</lmnt-footer>
+<lmnt-veil id="lmnt-veil">
+    <lmnt-header>
+        <lmnt-avatar-header src="/assets/images/avatar.webp" link="/">
+            codyconfer<blink-animation>.</blink-animation>me
+        </lmnt-avatar-header>
+        <lmnt-nav></lmnt-nav>
+    </lmnt-header>
+    {{ content }}
+    <lmnt-footer>
+        <lmnt-i-smtxt>
+            built with
+            <lmnt-imglink link="https://lit.dev/" src="/assets/svg/lit.svg" alt="lit" new></lmnt-imglink>
+        </lmnt-i-smtxt>
+    </lmnt-footer>
+</lmnt-veil>

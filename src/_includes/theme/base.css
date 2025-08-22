@@ -1,19 +1,7 @@
 :root {
   color: var(--foreground-0);
   background-color: var(--background-0);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
   margin: 0;
-}
-
-lmnt-content {
-  flex: fit-content;
-  margin: 0 3rem;
 }
 
 h2 {
@@ -64,40 +52,13 @@ blockquote p {
   color: var(--foreground-1)
 }
 
-.horizontal-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-0);
-}
-
-.icon,
-.logo {
+.icon {
   height: 24px;
   width: 24px;
 }
 
-.avatar-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  gap: 1rem;
-  color: var(--foreground-0);
-}
-
 .hidden {
   display: none;
-}
-
-.small-text {
-  font-size: 0.7rem;
 }
 
 .sans {
@@ -110,19 +71,4 @@ blockquote p {
 
 .dyslexic {
   font-family: var(--dyslexic-font), sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-  lmnt-content {
-    margin: 0;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  lmnt-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
 }

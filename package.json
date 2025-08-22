@@ -3,16 +3,20 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun --cwd=lmnt/ run build && bun run submodules.js && bunx @11ty/eleventy --serve",
+    "lmnt-dev": "bun --cwd=lmnt/ run dev",
+    "lmnt-pkg": "bun --cwd=lmnt/ run pkg && bun run build/submodules.js",
+    "dev": "bun --cwd=lmnt/ run pkg && bun run build/submodules.js && bunx @11ty/eleventy --serve",
     "serve": "bunx @11ty/eleventy --serve",
     "build": "bunx @11ty/eleventy",
-    "pkg": "bun --cwd=lmnt/ i && bun --cwd=lmnt/ run build && bun run submodules.js && bunx @11ty/eleventy"
+    "pkg": "bun --cwd=lmnt/ i && bun --cwd=lmnt/ run build && bun run build/submodules.js && bunx @11ty/eleventy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
     "@11ty/font-awesome": "^1.0.0-beta.1",
+    "bun": "^1.2.20",
+    "@types/bun":  "^1.2.20",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "lit": "^3.3.1",
