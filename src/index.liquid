@@ -6,3 +6,59 @@ layout: "layouts/default.liquid"
 {% endcapture %}
 {% include 'resume/header.liquid' %}
 {{ copy | md }}
+
+<hr />
+
+<h2>Technologies</h2>
+
+{% assign js = '[
+  {"src": "/assets/svg/js.svg", "alt": "JavaScript", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "new": true},
+  {"src": "/assets/svg/ts.svg", "alt": "TypeScript", "link": "https://www.typescriptlang.org/", "new": true},
+  {"src": "/assets/svg/lit.svg", "alt": "Lit.js", "link": "https://lit.dev/", "new": true},
+  {"src": "/assets/images/11ty.webp", "alt": "11ty", "link": "https://www.11ty.dev/", "new": true},
+  {"src": "/assets/images/rxjs.png", "alt": "reactivex", "link": "https://github.com/ReactiveX", "new": true},
+  {"src": "/assets/svg/vue.svg", "alt": "vue", "link": "https://vuejs.org/", "new": true},
+  {"src": "/assets/svg/react.svg", "alt": "react", "link": "https://react.dev/", "new": true},
+  {"src": "/assets/svg/vite.svg", "alt": "vite", "link": "https://vite.dev/", "new": true},
+  {"src": "/assets/svg/bun.svg", "alt": "bun", "link": "https://bun.sh/", "new": true}
+
+]' %}
+{% assign cs = '[
+  {"src": "/assets/svg/csharp.svg", "alt": "C#", "link": "https://learn.microsoft.com/en-us/dotnet/csharp/", "new": true},
+  {"src": "/assets/images/visualstudio.png", "alt": "Visual Studio", "link": "https://visualstudio.microsoft.com/", "new": true},
+  {"src": "/assets/images/powershell.ico", "alt": "Powershell", "link": "https://learn.microsoft.com/en-us/powershell/", "new": true}
+]' %}
+{% assign go = '[
+  {"src": "/assets/images/golang.png", "alt": "Go", "link": "https://go.dev/", "new": true},
+  {"src": "/assets/images/gin.png", "alt": "Gin", "link": "https://gin-gonic.com/", "new": true},
+  {"src": "/assets/images/cobra.png", "alt": "Cobra", "link": "https://cobra.dev/", "new": true},
+  {"src": "/assets/images/bubbletea.png", "alt": "Bubble Tea", "link": "https://github.com/charmbracelet/bubbletea", "new": true}
+]' %}
+{% assign py = '[
+  {"src": "/assets/svg/python.svg", "alt": "Python", "link": "https://www.python.org/", "new": true},
+  {"src": "/assets/svg/pandas.svg", "alt": "Pandas", "link": "https://pandas.pydata.org/", "new": true},
+  {"src": "/assets/images/fastapi.png", "alt": "FastAPI", "link": "https://fastapi.tiangolo.com/", "new": true}
+]' %}
+{% assign db = '[
+  {"src": "/assets/images/sqlserver.png", "alt": "SQL Server", "link": "https://www.microsoft.com/en-us/sql-server", "new": true},
+  {"src": "/assets/images/redis.png", "alt": "Redis", "link": "https://redis.io/", "new": true},
+  {"src": "/assets/svg/mongoleaf.svg", "alt": "Mongo DB", "link": "https://www.mongodb.com/", "new": true},
+  {"src": "/assets/images/postgres.png", "alt": "Postgres", "link": "https://www.postgresql.org/", "new": true},
+  {"src": "/assets/images/mariadb.png", "alt": "Maria DB", "link": "https://mariadb.org/", "new": true}
+]' %}
+{% assign cloud = '[
+  {"src": "/assets/svg/aws.svg", "alt": "AWS", "link": "https://aws.amazon.com/", "new": true},
+  {"src": "/assets/svg/azure.svg", "alt": "Azure", "link": "https://azure.microsoft.com/en-us/", "new": true},
+  {"src": "/assets/images/functionapp.png", "alt": "Function Apps", "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview", "new": true},
+  {"src": "/assets/images/gcp.png", "alt": "GCP", "link": "https://cloud.google.com/", "new": true},
+  {"src": "/assets/svg/firebase.svg", "alt": "Firebase", "link": "https://firebase.google.com/", "new": true}
+]' %}
+
+<lmnt-icon-grid>
+    <lmnt-icon-row icons='{{ js }}'></lmnt-icon-row>
+    <lmnt-icon-row icons='{{ cs }}'></lmnt-icon-row>
+    <lmnt-icon-row icons='{{ go }}'></lmnt-icon-row>
+    <lmnt-icon-row icons='{{ py }}'></lmnt-icon-row>
+    <lmnt-icon-row icons='{{ db }}'></lmnt-icon-row>
+    <lmnt-icon-row icons='{{ cloud }}'></lmnt-icon-row>
+</lmnt-icon-grid>

@@ -1,11 +1,2 @@
 
-> Experienced Software Engineer with a strong focus on full-stack development, cloud-native solutions, event-driven architectures, and cross-platform application development. Proven track record of delivering scalable, efficient, and maintainable software solutions in high-impact environments.
-
----
-
-#### **-> Technical Skills**<br>
-- **Programming Languages:** C#, TypeScript, Go, Python
-- **Frameworks & Libraries:** .NET, Lit.js, 11ty, Vue.js, Nuxt.js, React, Reactive Extensions, Gin, FastAPI, Cobra
-- **Databases:** PostgreSQL, Redis, MongoDB, DynamoDB, MariaDB, MSSQL, CosmoDB, Firestore
-- **Cloud Services:** Azure, Amazon Web Services, Google Cloud Platform
-- **Tools & Technologies:** Docker, Kubernetes, Git, GitHub Actions, MQTT, Kafka, Protobuf
+> I am a Software Engineer with over 15 years of experience designing and implementing full-stack; cloud-native solutions, event-driven architectures, and cross-platform applications. I have a proven track record of delivering scalable, efficient, and maintainable software solutions across various industries in both the public and private sector. The types of projects I have contributed to include: insurtech, consumer electronics, self-service kiosks, airline ticketing, e-commerce, workflow management, and inventory tracking software.
