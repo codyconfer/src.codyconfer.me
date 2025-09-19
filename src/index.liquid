@@ -9,8 +9,6 @@ layout: "layouts/default.liquid"
 
 <hr />
 
-<h2>Technologies</h2>
-
 {% assign js = '[
   {"src": "/assets/svg/js.svg", "alt": "JavaScript", "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript", "new": true},
   {"src": "/assets/svg/ts.svg", "alt": "TypeScript", "link": "https://www.typescriptlang.org/", "new": true},
@@ -55,10 +53,17 @@ layout: "layouts/default.liquid"
 ]' %}
 
 <lmnt-icon-grid>
+    <h2>Technologies</h2>
+    <h3>Web</h3>
     <lmnt-icon-row icons='{{ js }}'></lmnt-icon-row>
+    <h3>dotnet</h3>
     <lmnt-icon-row icons='{{ cs }}'></lmnt-icon-row>
+    <h3>golang</h3>
     <lmnt-icon-row icons='{{ go }}'></lmnt-icon-row>
+    <h3>Python</h3>
     <lmnt-icon-row icons='{{ py }}'></lmnt-icon-row>
+    <h3>Database</h3>
     <lmnt-icon-row icons='{{ db }}'></lmnt-icon-row>
+    <h3>Platform</h3>
     <lmnt-icon-row icons='{{ cloud }}'></lmnt-icon-row>
 </lmnt-icon-grid>

@@ -1,4 +1,4 @@
------
+<hr/>
 
 #### **-> Technical Skills**<br>
 - **Programming Languages:** C#, TypeScript, Go, Python
@@ -7,7 +7,7 @@
 - **Cloud Services:** Azure, Amazon Web Services, Google Cloud Platform
 - **Tools & Technologies:** Docker, Kubernetes, Git, GitHub Actions, MQTT, Kafka, Protobuf
 
------
+<hr/>
 
 ## Professional Experience
 
