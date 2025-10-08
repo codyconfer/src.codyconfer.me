@@ -5,27 +5,41 @@ nvm_version="0.40.3"
 go_version="1.25.1"
 
 sudo apt update
+sudo apt install wget gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg
+rm -f microsoft.gpg
+ms_deb='Types: deb
+URIs: https://packages.microsoft.com/repos/code
+Suites: stable
+Components: main
+Architectures: amd64,arm64,armhf
+Signed-By: /usr/share/keyrings/microsoft.gpg
+'
+sudo echo $ms_deb > /etc/apt/sources.list.d/vscode.sources
+sudo apt install apt-transport-https
+sudo apt update
 echo "" >> $HOME/.bashrc && \
 echo "# dotnet" >> $HOME/.bashrc && \
-echo "export DOTNET_ROOT=\$HOME/.dotnet" >> $HOME/.bashrc && \
-echo "export PATH=\$PATH:\$HOME/.dotnet:\$HOME/.dotnet/tools" >> $HOME/.bashrc && \
+echo 'export DOTNET_ROOT=$HOME/.dotnet' >> $HOME/.bashrc && \
+echo 'export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools' >> $HOME/.bashrc && \
 echo "" >> $HOME/.bashrc && \
 echo "# pyenv" >> $HOME/.bashrc && \
-echo "export PYENV_ROOT=\$HOME/.pyenv" >> $HOME/.bashrc && \
-echo "export PATH=\$PYENV_ROOT/bin:\$PATH" >> $HOME/.bashrc && \
-echo "eval \"\$(pyenv init -)\"" >> $HOME/.bashrc && \
+echo 'export PYENV_ROOT=$HOME/.pyenv' >> $HOME/.bashrc && \
+echo 'export PATH=$PYENV_ROOT/bin:$PATH' >> $HOME/.bashrc && \
+echo 'eval "$(pyenv init -)"' >> $HOME/.bashrc && \
 echo "" >> $HOME/.bashrc && \
 echo "# nvm" >> $HOME/.bashrc && \
-echo "export NVM_DIR=\$HOME/.nvm" >> $HOME/.bashrc && \
-echo "[ -s \"\$NVM_DIR/nvm.sh\" ] && \. \"\$NVM_DIR/nvm.sh\"" >> $HOME/.bashrc && \
-echo "[ -s \"\$NVM_DIR/bash_completion\" ] && \. \"\$NVM_DIR/bash_completion\"" >> $HOME/.bashrc && \
-echo "export PATH=\$NVM_DIR:\$PATH" >> $HOME/.bashrc && \
+echo 'export NVM_DIR=$HOME/.nvm' >> $HOME/.bashrc && \
+echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh\"' >> $HOME/.bashrc && \
+echo '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"' >> $HOME/.bashrc && \
+echo 'export PATH=$NVM_DIR:$PATH' >> $HOME/.bashrc && \
 echo "" >> $HOME/.bashrc
 sudo apt install -y make build-essential libssl-dev \
 zlib1g-dev libreadline-dev libsqlite3-dev wget curl \
 llvm libncursesw5-dev xz-utils tk-dev libxml2-dev \
 unzip libxmlsec1-dev libffi-dev liblzma-dev neovim \
-git gh
+git gh code
 sudo wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh
 sudo chmod +x ./dotnet-install.sh
 for v in "${dotnet_versions[@]}"; do
