@@ -44,7 +44,7 @@ eval "$(oh-my-posh init zsh)"
 echo $profile >> $HOME/.bashrc
 sudo apt install -y zsh unzip neovim git gh
 echo "$profile$zshrc" > .zshrc
-curl -s https://ohmyposh.dev/install.sh | bash -s
+sudo curl -s https://ohmyposh.dev/install.sh | bash -s
 sudo chsh $(whoami) -s /usr/bin/zsh
 sudo apt install -y make build-essential libssl-dev \
 zlib1g-dev libreadline-dev libsqlite3-dev wget curl \
