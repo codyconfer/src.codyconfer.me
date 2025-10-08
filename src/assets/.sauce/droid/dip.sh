@@ -189,7 +189,7 @@ style = "plain"
 cache_duration = "none"
 '
 theme_dir="$HOME/.sauce/themes"
-sudo apt install zsh
+sudo apt install -y zsh
 sudo mkdir -p $theme_dir
 echo $sauce_omp > $theme_dir/sauce.ohmyposh.toml
 echo "$zshrc $profile" > .zshrc
