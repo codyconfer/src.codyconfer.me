@@ -40,6 +40,8 @@ export PATH=$NVM_DIR:$PATH
 zshrc='# .oh-my-posh
 export PATH=$PATH:$HOME/.local/bin
 eval "$(oh-my-posh init zsh)"
+
+clear
 '
 echo $profile >> $HOME/.bashrc
 sudo apt install -y zsh unzip neovim git gh
