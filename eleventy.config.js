@@ -12,12 +12,14 @@ import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight'
 const _input = 'src'
 const _assets = `${_input}/assets`
 const _includes =`${_input}/_includes`
+const _cdn = `${_input}/.sauce`
 const _layouts = `${_includes}/layouts`
 
 
 export default async function (eleventyConfig) {
   eleventyConfig.setInputDirectory(_input)
   eleventyConfig.addPassthroughCopy(`${_assets}/`)
+  eleventyConfig.addPassthroughCopy(`${_cdn}/`)
 
   let options = {
     html: true,
