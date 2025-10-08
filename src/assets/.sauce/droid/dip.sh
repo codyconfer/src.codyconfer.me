@@ -5,7 +5,7 @@ nvm_version="0.40.3"
 go_version="1.25.1"
 
 sudo apt update
-sudo apt install wget gpg
+sudo apt install -y wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 sudo install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg
 rm -f microsoft.gpg
@@ -17,7 +17,7 @@ Architectures: amd64,arm64,armhf
 Signed-By: /usr/share/keyrings/microsoft.gpg
 '
 sudo echo $ms_deb > /etc/apt/sources.list.d/vscode.sources
-sudo apt install apt-transport-https
+sudo apt install -y apt-transport-https
 sudo apt update
 echo "" >> $HOME/.bashrc && \
 echo "# dotnet" >> $HOME/.bashrc && \
