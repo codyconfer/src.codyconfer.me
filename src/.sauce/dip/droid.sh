@@ -2,7 +2,7 @@
 
 dotnet_versions=("9.0" "10.0")
 nvm_version="0.40.3"
-go_version="1.25.1"
+go_version="1.25.2"
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y wget gpg
@@ -102,7 +102,7 @@ sudo chmod +x ./dotnet-install.sh
 for v in "${dotnet_versions[@]}"; do
     ./dotnet-install.sh --channel $v
 done
-rm ./dotnet-install
+rm ./dotnet-install.sh
 curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$nvm_version/install.sh" | bash
 curl -fsSL https://bun.com/install | bash
 curl https://pyenv.run | bash
