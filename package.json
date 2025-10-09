@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "lmnt-dev": "bun --cwd=lmnt/ run dev",
-    "lmnt-pkg": "bun --cwd=lmnt/ run pkg && bun run build/submodules.js",
+    "lmnt-pkg": "bun i --cwd=lmnt/ && bun --cwd=lmnt/ run pkg && bun run build/submodules.js",
     "dev": "bun --cwd=lmnt/ run pkg && bun run build/submodules.js && bunx @11ty/eleventy --serve",
     "serve": "bunx @11ty/eleventy --serve",
     "build": "bunx @11ty/eleventy",

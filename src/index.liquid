@@ -51,6 +51,13 @@ layout: "layouts/default.liquid"
   {"src": "/assets/images/gcp.png", "alt": "GCP", "link": "https://cloud.google.com/", "new": true},
   {"src": "/assets/svg/firebase.svg", "alt": "Firebase", "link": "https://firebase.google.com/", "new": true}
 ]' %}
+{% assign privacy = '[
+  {"src": "/assets/svg/eff.svg", "alt": "EFF", "link": "https://ssd.eff.org/", "new": true},
+  {"src": "/assets/images/aos.png", "alt": "Atlas of Surveillance", "link": "https://www.atlasofsurveillance.org/", "new": true},
+  {"src": "/assets/svg/cyt.svg", "alt": "Cover Your Tracks", "link": "https://coveryourtracks.eff.org", "new": true},
+  {"src": "/assets/images/crwiki.png", "alt": "Consumer Rights Wiki", "link": "https://consumerrights.wiki", "new": true},
+  {"src": "/assets/svg/tldr.svg", "alt": "TLDR Legal", "link": "https://www.tldrlegal.com/", "new": true}
+]' %}
 
 <lmnt-icon-grid>
     <h2>Technologies</h2>
@@ -66,4 +73,9 @@ layout: "layouts/default.liquid"
     <lmnt-icon-row icons='{{ db }}'></lmnt-icon-row>
     <h3>Platform</h3>
     <lmnt-icon-row icons='{{ cloud }}'></lmnt-icon-row>
+</lmnt-icon-grid>
+<hr />
+<lmnt-icon-grid>
+    <h2>Protect Your Rights</h2>
+    <lmnt-icon-row icons='{{ privacy }}'></lmnt-icon-row>
 </lmnt-icon-grid>
