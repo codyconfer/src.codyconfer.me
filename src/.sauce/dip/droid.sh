@@ -102,6 +102,7 @@ sudo chmod +x ./dotnet-install.sh
 for v in "${dotnet_versions[@]}"; do
     ./dotnet-install.sh --channel $v
 done
+rm ./dotnet-install
 curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$nvm_version/install.sh" | bash
 curl -fsSL https://bun.com/install | bash
 curl https://pyenv.run | bash
