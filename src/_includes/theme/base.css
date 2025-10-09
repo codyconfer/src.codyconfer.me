@@ -6,7 +6,6 @@
 
 h2 {
   color: var(--accent-0);
-  margin: 3rem 0;
 }
 
 h3 {
@@ -72,4 +71,8 @@ blockquote p {
 
 .dyslexic {
   font-family: var(--dyslexic-font), sans-serif;
+}
+
+.w-100 {
+  width: 100%;
 }
