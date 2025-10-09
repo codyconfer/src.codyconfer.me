@@ -26,6 +26,10 @@ profile='
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools
 
+# go
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+
 # pyenv
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
