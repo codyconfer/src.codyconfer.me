@@ -26,6 +26,12 @@ h5[class*="job"] {
   margin: 0 0 0.3rem;
 }
 
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .profile-row {
   display: flex;
   flex-direction: row;
@@ -101,7 +107,7 @@ h5[class*="job"] {
   .profile-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
   }
 
