@@ -73,6 +73,16 @@ blockquote p {
   font-family: var(--dyslexic-font), sans-serif;
 }
 
+.callsign {
+  font-family: var(--callsign-font), monospace;
+  color: var(--foreground-1);
+  text-decoration: none;
+}
+
 .w-100 {
   width: 100%;
+}
+
+.m-0 {
+  margin: 0;
 }

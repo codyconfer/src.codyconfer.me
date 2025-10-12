@@ -16,10 +16,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: ShureTechMono;
+  src: url('/assets/fonts/ShureTechMono.woff2') format('woff2');
+  font-display: swap;
+}
+
 :root {
   --sans-font: Cabin, system-ui, Roboto, Verdana, Helvectica, Arial;
   --mono-font: Terminess, Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
   --dyslexic-font: Dyslexic, system-ui, Roboto, Verdana, Helvectica, Arial, sans-serif;
+  --callsign-font: ShureTechMono,  Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
   font-family: var(--sans-font), sans-serif;
   line-height: 1.5;
   font-weight: 400;
