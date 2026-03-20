@@ -1,8 +1,8 @@
 #!/bin/bash
 
 dotnet_versions=("9.0" "10.0")
-nvm_version="0.40.3"
-go_version="1.25.3"
+nvm_version="0.40.4"
+go_version="1.26.0"
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y wget gpg
