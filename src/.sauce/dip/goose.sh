@@ -22,7 +22,7 @@ for FILE in "${SH_FILES[@]}"; do
         if grep -qF "$SH_EXPORT_STRING" "$FILE"; then
             echo "✅ Go path already present in $FILE"
         else
-            export PATH=$PATH:'"$GO_SYS_BIN:$GO_USER_BIN
+            export PATH=$PATH:$GO_SYS_BIN:$GO_USER_BIN
             echo "" >> ""
             echo "# Go" >> "$FILE"
             echo "$SH_EXPORT_STRING" >> "$FILE"
