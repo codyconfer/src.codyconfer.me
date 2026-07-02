@@ -1,8 +1,8 @@
 #!/bin/bash
 
-dotnet_versions=("9.0" "10.0")
-nvm_version="0.40.4"
-go_version="1.26.0"
+dotnet_versions=("10.0")
+nvm_version="0.40.5"
+go_version="1.26.4"
 
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y wget gpg
@@ -108,7 +108,6 @@ for v in "${dotnet_versions[@]}"; do
 done
 rm ./dotnet-install.sh
 curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v$nvm_version/install.sh" | bash
-curl -fsSL https://bun.com/install | bash
 curl https://pyenv.run | bash
 curl -OL "https://go.dev/dl/go$go_version.linux-arm64.tar.gz"
 sudo tar -C /usr/local -xzf "go$go_version.linux-arm64.tar.gz"
