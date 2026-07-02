@@ -2,9 +2,7 @@
 
 go_version="1.26.4"
 
-echo "📡 retrieving updates and dependencies..." 
-sudo apt update && sudo apt upgrade -y
-echo "✅ updates complete"
+echo "📡 retrieving dependencies..." 
 curl -OL "https://go.dev/dl/go$go_version.linux-arm64.tar.gz"
 sudo tar -C /usr/local -xzf "go$go_version.linux-arm64.tar.gz"
 rm "go$go_version.linux-arm64.tar.gz"
