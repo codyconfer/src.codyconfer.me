@@ -24,8 +24,9 @@ for FILE in "${SH_FILES[@]}"; do
         if grep -qF "$SH_EXPORT_STRING" "$FILE"; then
             echo "✅ Go path already present in $FILE"
         else
-            echo "" >> "$FILE"
-            echo "# Go PATH setup" >> "$FILE"
+            export PATH=$PATH:'"$GO_SYS_BIN:$GO_USER_BIN
+            echo "" >> ""
+            echo "# Go" >> "$FILE"
             echo "$SH_EXPORT_STRING" >> "$FILE"
             echo "➕ Added Go path to $FILE"
         fi
@@ -46,7 +47,7 @@ if [ -f "$FISH_FILE" ]; then
         echo "➕ Added Go path to $FISH_FILE"
     fi
     if [[ "$SHELL" == *"fish"* ]]; then
-        echo "⚠️  Note: You are currently using Fish. To apply changes to this active terminal, run: source $FISH_FILE"
+        fish_add_path $GO_SYS_BIN $GO_USER_BIN
     fi
 fi
 echo "🚀 dependencies done ..."
