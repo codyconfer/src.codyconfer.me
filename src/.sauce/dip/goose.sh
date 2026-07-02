@@ -53,5 +53,5 @@ echo "..." && sleep 2
 echo "..." && sleep 3
 echo "🪿 the goose is loose..."
 echo "📀 greasing the goose"
-go install github.com/codyconfer/goose
-goose play
+go install github.com/codyconfer/goose@latest
+goose
