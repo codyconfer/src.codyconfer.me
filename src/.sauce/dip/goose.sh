@@ -50,9 +50,9 @@ if [ -f "$FISH_FILE" ]; then
     fi
 fi
 echo "🚀 dependencies done ..."
-echo "..." && sleep 0.5
-echo "..." && sleep 1
-echo "🪿 the goose is loose... 
+echo "..." && sleep 2
+echo "..." && sleep 3
+echo "🪿 the goose is loose..."
 echo "📀 greasing the goose"
 go install github.com/codyconfer/goose
 goose play
