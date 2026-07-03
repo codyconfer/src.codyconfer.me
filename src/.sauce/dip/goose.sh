@@ -2,17 +2,14 @@
 
 go_version="1.26.4"
 
-
-
 if command -v go >/dev/null 2>&1; then
-  echo "✅ Go is already installed: $(go version)"
+    echo "✅ Go is already installed: $(go version)"
 else
     echo "📡 retrieving dependencies..." 
     curl -OL "https://go.dev/dl/go$go_version.linux-arm64.tar.gz"
     sudo tar -C /usr/local -xzf "go$go_version.linux-arm64.tar.gz"
     rm "go$go_version.linux-arm64.tar.gz"
     echo "✅ go installed: $(go version)"
-
     echo "📀 configuring dependencies..." 
     GO_SYS_BIN="/usr/local/go/bin"
     GO_USER_BIN="$HOME/go/bin"
