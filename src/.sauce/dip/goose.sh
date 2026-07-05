@@ -49,10 +49,10 @@ else
         fi
     done
     echo "🚀 dependencies done ..."
+    echo "..." && sleep 1
     echo "..." && sleep 2
-    echo "..." && sleep 3
 fi
-echo "🪿 the goose is loose..."
-echo "📀 greasing the goose"
+echo "📀 greasing the goose..."
 go install github.com/codyconfer/goose@latest
+echo "🪿 the goose is loose!"
 goose
