@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # the lmnt submodule supplies the theme CSS that src/_includes pulls in via
+      # liquid {% include %}, so the site cannot build without it
+      - uses: actions/checkout@v5
+        with:
+          submodules: recursive
+
+      - uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # "run pkg", not "pkg" -- pnpm has a builtin `pkg` command that shadows the
+      # script name. this builds the submodule, copies its artifacts, then eleventy.
+      - run: pnpm run pkg
